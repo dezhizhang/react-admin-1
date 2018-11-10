@@ -1,24 +1,36 @@
-:global .App {
+:global .Enterprise {
   height: 100%
 }
 
-:global .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+:global .Enterprise-sider{
+  width: 146px!important;
+  height: 100%;
+  background: #fff;
+
 }
 
-:global .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+:global .Enterprise-logo {
+  animation: Enterprise-logo-spin infinite 20s linear;
+  height: 64px;
+}
+
+:global .Enterprise-logo-image{
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+:global .Enterprise-header {
+  background: #2c70c0!important;
   color: white;
 }
 
-:global .App-intro {
+:global .Enterprise-intro {
   font-size: large;
+
 }
 
-@keyframes App-logo-spin {
+@keyframes Enterprise-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }

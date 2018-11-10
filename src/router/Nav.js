@@ -45,15 +45,7 @@ class Nav extends Component {
   };
   render() {
     return (
-      <Menu
-        theme={this.state.theme}
-        onClick={this.handleClick}
-        style={{ width: "100%" }}
-        selectedKeys={[this.state.current]}
-        openKeys={[this.state.open]}
-        onOpenChange={this.openMenu}
-        mode="inline"
-      >
+      <Menu>
         <SubMenu
           key="/ui"
           title={

@@ -1,20 +1,19 @@
-import React, { Component } from "react";
-import { Layout, Icon } from "antd";
+import React,{ Component } from 'react';
 import { bindActionCreators } from 'redux';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { receiveData } from './redux/action';
-import Nav from "./router/Nav";
-import RouterUrl from "./router/RouterUrl";
-import "./App.css";
+import Navigation from  './router/Navigation';
+import RouterUrl from './router/RouterUrl';
+import logo from './common/imgs/logo.png';
+import './App.css';
+
+import { Layout,Icon } from 'antd'
+
+
 const { Header, Sider,Footer } = Layout
-const mapStateToProps = state => {
-  const  data = state.defaultData;
-  return {data};
-};
-const mapDispatchToProps = dispatch => ({
-  receiveData:bindActionCreators(receiveData, dispatch)
-});
+
+
 @connect(mapStateToProps,mapDispatchToProps) 
 class App extends Component {
   state = {
@@ -26,26 +25,27 @@ class App extends Component {
       collapsed: !this.state.collapsed
     });
   };
-  componentDidMount = async () => {
-    await this.props.receiveData();
-    console.log('初始化redux-state:');
-    console.log(this.props.data)
-  }
+  // componentDidMount = async () => {
+  //   await this.props.receiveData(); 
+  //   console.log('初始化redux-state:');
+  //   console.log(this.props.data)
+  // }
+
   
   render() {
-    console.log('公共函数:commonFun查看');
+   
     return (
       <BrowserRouter>
-      <div className="App">
-        <Layout style={{ height: "100%" }}>
-        <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-          <div className='logo' style={{color:'#fff'}}>Su</div>
-            <Nav/>
+      <div className="Enterprise">
+        <Layout >
+          <Sider className="Enterprise-sider" trigger={null} collapsible collapsed={this.state.collapsed}>
+              <div  className="Enterprise-logo" style={{color:'#fff'}}>
+                <img className="Enterprise-logo-image" src={logo}/>
+              </div>
+              <Navigation/>
           </Sider>
           <Layout>
-            <Header
-              style={{ background: "#424242 !important", padding: 0, paddingLeft: "20px" }}
-            >
+            <Header className="Enterprise-header">
               <Icon
                 className="trigger"
                 type={this.state.collapsed ? "menu-unfold" : "menu-fold"}
@@ -53,16 +53,10 @@ class App extends Component {
                 style={{ fontSize: 20,color:'#fff' }}
               />
             </Header>
-            {
-              <style>
-                .text{
-                  
-                }
-              </style>
-            }
-              <RouterUrl/>
+             <RouterUrl/>
               <Footer style={{ textAlign:'center' }}>
-              rc-Admin ©2017 Created by 827606400@qq.com
+              主办单位：好利来信息技术有限公司<br/>
+              Operated by 1541609448@qq.com
             </Footer>
               </Layout>
               </Layout>
@@ -71,4 +65,14 @@ class App extends Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  const  data = state.defaultData;
+  return {data};
+};
+
+const mapDispatchToProps = dispatch => ({
+  receiveData:bindActionCreators(receiveData, dispatch)
+});
+
 export default App;

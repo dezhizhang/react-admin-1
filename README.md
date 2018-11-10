@@ -1,31 +1,11 @@
 # react-admin 
 > react-后台管理系统
-
-  欢迎使用后台管理系统解决方案
-
 ### 最近更新
 ```jsn
 升级所有模块到最新,近期会陆续更新
-```
-### 依赖模块
-<span style="color: rgb(184,49,47);">项目是用create-react-app创建的，主要还是列出新加的功能依赖包</span>
-
-<span style="color: rgb(184,49,47);">点击名称可跳转相关网站😄😄</span>
-- [react](https://facebook.github.io/react/)<span style="color: rgb(243,121,52);">👍</span>
-- [react-router](https://react-guide.github.io/react-router-cn/)(<span style="color: rgb(243,121,52);">react路由👍</span>)
-- [antd](https://ant.design/index-cn)(<span style="color: rgb(243,121,52);">蚂蚁金服开源react ui组件框架👍</span>)
-- [redux](https://github.com/reactjs/redux)(<span style="color: rgb(243,121,52);">状态管理👍</span>)
-- [react-redux](https://github.com/reactjs/react-redux)(<span style="color: rgb(243,121,52);">react版本的redux👍</span>)
-- [redux-thunk](https://github.com/gaearon/redux-thunk)(<span style="color: rgb(243,121,52);">dispatch返回函数👍</span>)
-- [axios](https://github.com/mzabriskie/axios)(<span style="color: rgb(243,121,52);">http请求模块，可用于前端任何场景，很强大👍</span>)
-- [transform-decorators-legacy](https://www.npmjs.com/package/babel-plugin-transform-decorators-legacy)(<span style="color: rgb(243,121,52);">@ES7装饰符 很强大👍</span>)
-- [nprogress](https://github.com/rstacruz/nprogress)(<span style="color: rgb(243,121,52);">简小的顶部加载条 很强大👍</span>)
-- 其他小细节省略
-
+```s
 ### 功能模块
-<span style="color: rgb(184,49,47);">备注：项目只引入了ant-design的部分组件，其他的组件antd官网有源码，可以直接复制到项目中使用，后续有时间补上全部组件。😁</span>
-<span style="color: rgb(184,49,47);">项目使用了antd的默认主题功能，若想替换其他颜色，具体操作请查看antd官网😁</span>
-<!--more-->
+
 ### 代码目录
 ```js
 +-- build/                                  ---打包的文件目录
@@ -47,18 +27,14 @@
 ```
 ### 安装运行
 
-##### 1.克隆项目
-```js
-npm i
+npm install 或cnpm install yarn  
 ```
 ##### 3.启动项目
 ```js
-npm start
+npm start 或yarn start
 ```
 ##### 4.打包项目
 ```js
 npm run build
-```
-### 结尾
 
 
