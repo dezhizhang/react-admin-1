@@ -25,6 +25,7 @@
   color: white;
 }
 
+
 :global .Enterprise-intro {
   font-size: large;
 
@@ -59,3 +60,22 @@
   font-size: 14px;
   margin-left: 20px;
 }
+
+:global .Navigation-menu{
+  height: 60px!important;
+  line-height: 60px!important;
+
+}
+
+:global .navigation-wrapper{
+  height: 1044px;
+  
+}
+
+
+
+
+
+
+
+
