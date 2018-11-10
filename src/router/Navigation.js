@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import { Menu, Icon, Button } from 'antd';
+import { Menu, Icon, } from 'antd';
 
 
 class Navigation extends Component{
@@ -27,7 +27,7 @@ class Navigation extends Component{
             >
                 <Menu.Item key="1" className="Navigation-menu">
                     <Icon type="mail" />
-                    <span>企业邮箱</span>
+                    <Link to={`/ui/buttons`}>企业邮箱</Link>
                 </Menu.Item>
                 <Menu.Item key="2" className="Navigation-menu">
                     <Icon type="desktop" />
