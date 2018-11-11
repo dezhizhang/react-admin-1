@@ -7,12 +7,16 @@ import NavigationLeft from  './router/NavigationLeft';
 import NavigationRight from './router/NavigationRight';
 import RouterUrl from './router/RouterUrl';
 import logo from './common/imgs/logo.png';
-import './App.css';
+import banner from './common/imgs/banner.png';
+import style from './App.css';
+import './iconfont.css';
 
-import { Layout,Icon, Col,Row } from 'antd'
 
+import { Layout,Icon, Col,Row,Button,Input } from 'antd'
 
-const { Header, Sider,Footer } = Layout
+const Search = Input.Search;
+const { Header, Footer, Sider, Content } = Layout;
+
 
 
 @connect(mapStateToProps,mapDispatchToProps) 
@@ -39,31 +43,42 @@ class App extends Component {
       <BrowserRouter>
       <div className="App">
         <Layout >
-          <Layout>
+         
             <Header className="App-header">
-               <div className="Nav-wrapper">
+               <div className={style.NavWrapper}>
                   <Row>
                      <Col span={12}>
-                        <div className="Nav-left-wrapper">
+                        <div className={style.NavLeftWrapper}>
                             <NavigationLeft/>
                          </div>
                      </Col>
                      <Col span={12}>
-                        <div className="Nav-right-wrapper">
+                        <div className={style.NavRightWrapper}>
                             <NavigationRight/>
                         </div>
                      </Col>
                   </Row>
-                  
-                 
                </div>
             </Header>
-                  <RouterUrl/>
-                  <Footer style={{ textAlign:'center' }}>
+            <Content className={style.content}>
+               <div className={style.banner}>
+                  <img className={style.image} src={banner}/>
+                  <div className={style.search}>
+                      <Button className={`${style.searchButton}`} type="default" icon="pause">排行榜</Button>
+                      <Search
+                        placeholder="请输入搜索内容"
+                        onSearch={value => console.log(value)}
+                        className={style.searchInput}
+                    />
+                  </div>
+               </div>
+            </Content>
+
+            <RouterUrl/>
+            <Footer style={{ textAlign:'center' }}>
                   主办单位：好利来信息技术有限公司<br/>
                   Operated by 1541609448@qq.com
-                  </Footer>
-              </Layout>
+            </Footer>
         </Layout>
       </div>
       </BrowserRouter>

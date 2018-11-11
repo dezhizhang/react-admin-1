@@ -48,8 +48,8 @@ class NavigationLeft extends Component{
                     <Menu.Item   key="setting:4">Option 4</Menu.Item>
                 </MenuItemGroup>
             </SubMenu>
-            <Menu.Item key="download">
-                 <Icon type="mail" className={style.navigationItem}/>下载APP
+            <Menu.Item key="download" className={style.navigationItem}>
+                 <Icon type="mail" />下载APP
             </Menu.Item>
             </Menu>
         </div>
