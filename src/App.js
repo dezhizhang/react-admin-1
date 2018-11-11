@@ -72,6 +72,12 @@ class App extends Component {
                     />
                   </div>
                </div>
+               <div className={style.contentWrapper}>
+                   <div className={style.contentTabbar}>
+                        
+                   </div>
+                   <div className={style.contentMove}></div>
+               </div>
             </Content>
 
             <RouterUrl/>
