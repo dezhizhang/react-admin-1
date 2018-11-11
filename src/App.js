@@ -3,12 +3,13 @@ import { bindActionCreators } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { receiveData } from './redux/action';
-import Navigation from  './router/Navigation';
+import NavigationLeft from  './router/NavigationLeft';
+import NavigationRight from './router/NavigationRight';
 import RouterUrl from './router/RouterUrl';
 import logo from './common/imgs/logo.png';
 import './App.css';
 
-import { Layout,Icon } from 'antd'
+import { Layout,Icon, Col,Row } from 'antd'
 
 
 const { Header, Sider,Footer } = Layout
@@ -36,30 +37,34 @@ class App extends Component {
    
     return (
       <BrowserRouter>
-      <div className="Enterprise">
+      <div className="App">
         <Layout >
-          <Sider className="Enterprise-sider" trigger={null} collapsible collapsed={this.state.collapsed}>
-              <div  className="Enterprise-logo" style={{color:'#fff'}}>
-                <img className="Enterprise-logo-image" src={logo}/>
-              </div>
-              <Navigation/>
-          </Sider>
           <Layout>
-            <Header className="Enterprise-header">
-              <Icon
-                className="trigger"
-                type={this.state.collapsed ? "menu-unfold" : "menu-fold"}
-                onClick={this.toggle}
-                style={{ fontSize: 20,color:'#fff' }}
-              />
+            <Header className="App-header">
+               <div className="Nav-wrapper">
+                  <Row>
+                     <Col span={12}>
+                        <div className="Nav-left-wrapper">
+                            <NavigationLeft/>
+                         </div>
+                     </Col>
+                     <Col span={12}>
+                        <div className="Nav-right-wrapper">
+                            <NavigationRight/>
+                        </div>
+                     </Col>
+                  </Row>
+                  
+                 
+               </div>
             </Header>
-             <RouterUrl/>
-              <Footer style={{ textAlign:'center' }}>
-              主办单位：好利来信息技术有限公司<br/>
-              Operated by 1541609448@qq.com
-            </Footer>
+                  <RouterUrl/>
+                  <Footer style={{ textAlign:'center' }}>
+                  主办单位：好利来信息技术有限公司<br/>
+                  Operated by 1541609448@qq.com
+                  </Footer>
               </Layout>
-              </Layout>
+        </Layout>
       </div>
       </BrowserRouter>
     );

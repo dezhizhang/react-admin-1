@@ -1,0 +1,21 @@
+
+
+
+:global .ant-menu-submenu-title{
+    padding: 0 6px 0px 0px!important;
+    display: block;
+
+
+}
+.navigationItem{
+    padding: 0 6px 0px 0px!important;
+
+}
+
+.div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    
+}
+

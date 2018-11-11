@@ -1,32 +1,37 @@
-:global .Enterprise {
+:global .App {
   height: 100%
 }
 
-:global .Enterprise-sider{
-  width: 146px!important;
-  height: 100%;
-  background: #fff;
-
-}
-
-:global .Enterprise-logo {
-  animation: Enterprise-logo-spin infinite 20s linear;
-  height: 64px;
-}
-
-:global .Enterprise-logo-image{
-  width: 100%;
-  height: 64px;
-  box-sizing: border-box;
-}
-
-:global .Enterprise-header {
-  background: #2c70c0!important;
+:global .App-header{
+  background: #ffe464;
+  height: 42px;
   color: white;
+  padding: 0 142px;
+
+}
+
+:global .Nav-wrapper{
+  height: 42px;
+
+}
+
+:global .Nav-left-wrapper{
+  width: 364px;
+  height: 42px;
+  float: left;
+
+
+}
+
+:global .Nav-right-wrapper{
+  width: 404px;
+  height: 42px;
+  background: yellow;
+  float:right;
 }
 
 
-:global .Enterprise-intro {
+:global .App-intro {
   font-size: large;
 
 }
@@ -71,6 +76,8 @@
   height: 1044px;
   
 }
+
+
 
 
 
