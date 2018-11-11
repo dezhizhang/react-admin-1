@@ -8,6 +8,8 @@ import NavigationRight from './router/NavigationRight';
 import RouterUrl from './router/RouterUrl';
 import logo from './common/imgs/logo.png';
 import banner from './common/imgs/banner.png';
+import ContentTabbar from './components/contentTabbar/ContentTabbar';
+import ContentMove from './components/contentMove/ContentMove';
 import style from './App.css';
 import './iconfont.css';
 
@@ -74,10 +76,14 @@ class App extends Component {
                </div>
                <div className={style.contentWrapper}>
                    <div className={style.contentTabbar}>
-                        
+                       <ContentTabbar/>
                    </div>
-                   <div className={style.contentMove}></div>
+                   <div className={style.contentMove}>
+                      <ContentMove/>
+                   </div>
+                   <div className={style.contentPromote}></div>
                </div>
+              
             </Content>
 
             <RouterUrl/>

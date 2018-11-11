@@ -1,3 +1,49 @@
 .tabbarWrapper{
+  width: 100%;
+
+}
+
+.tabbarMenu{
+    height: 64px;
+    line-height: 64px;
+
+}
+
+.tabbarMenuItem{
+    position: relative;
+    padding: 5px 22px 0px 0px;
+
+}
+   
+
+.tabbarIcon{
+    display: inline-block;
+    display: inline-block;
+    background: #f9a5c6;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    font-style:normal;
+    left: 5px;
+    top: -10px;
+    font-size: 8px;
+    text-align: center;
+    padding: 0 4px;
+
+  
+
+
+
+
     
+    
+}
+
+.tabbarIndex{
+    position: absolute;
+    left: 0px;
+    top: -12px;
+
 }

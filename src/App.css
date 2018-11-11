@@ -101,11 +101,10 @@
   background: #fff;
 
 }
-
+ 
 .contentTabbar{
    height: 64px;
    width: 100%;
-   background: red;
 
 }
 
@@ -113,7 +112,14 @@
   width: 100%;
   height: 222px;
   background: yellow;
-  
+
+
+}
+
+.contentPromote{
+   width: 100%;
+   height: 202px;
+   background: pink;
 
 }
 
