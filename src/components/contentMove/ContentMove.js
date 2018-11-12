@@ -30,33 +30,41 @@ class ContentMove extends React.Component{
                     <div className={style.item}>
                        <div className={`${style.listTop} ${style.list}`}>
                           <img src={time1} className={style.listImage}/>
+                          <span className={`${style.center} ${style.font}`}>[魔王怼选手]恋爱物</span>
                        </div>
                        <div className={`${style.list}`}>
                           <img src={time2} className={style.listImage}/>
+                          <span className={`${style.center} ${style.fontBom}`}>[魔王怼选手]恋爱物</span>
                        </div>
                     </div>
                     <div className={style.item}>
                        <div className={`${style.listTop} ${style.list}`}>
                           <img src={time3} className={style.listImage}/>
+                          <span className={`${style.center} ${style.font}`}>[魔王怼选手]恋爱物</span>
                        </div>
                        <div className={`${style.list}`}>
                           <img src={time4} className={style.listImage}/>
+                          <span className={`${style.center} ${style.fontBom}`}>[魔王怼选手]恋爱物</span>
                        </div>
                     </div>
                     <div className={style.item}>
                        <div className={`${style.listTop} ${style.list}`}>
                           <img src={time1} className={style.listImage}/>
+                          <span className={`${style.center} ${style.font}`}>[魔王怼选手]恋爱物</span>
                        </div>
                        <div className={`${style.list}`}>
                           <img src={time4} className={style.listImage}/>
+                          <span className={`${style.center} ${style.fontBom}`}>[魔王怼选手]恋爱物</span>
                        </div>
                     </div>
                     <div className={style.item}>
                        <div className={`${style.list} ${style.listTop}`}>
                           <img src={time4} className={style.listImage}/>
+                          <span className={`${style.center} ${style.font} `}>[魔王怼选手]恋爱物</span>
                        </div>
                        <div className={`${style.list}`}>
                          <img src={time2} className={style.listImage}/>
+                         <span className={`${style.center} ${style.fontBom}`}>[魔王怼选手]恋爱物</span>
                        </div>
                     </div>
                   </div>

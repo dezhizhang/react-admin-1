@@ -6,10 +6,11 @@ import { receiveData } from './redux/action';
 import NavigationLeft from  './router/NavigationLeft';
 import NavigationRight from './router/NavigationRight';
 import RouterUrl from './router/RouterUrl';
-import logo from './common/imgs/logo.png';
 import banner from './common/imgs/banner.png';
 import ContentTabbar from './components/contentTabbar/ContentTabbar';
 import ContentMove from './components/contentMove/ContentMove';
+import ContentPromote from './components/contentPromote/ContentPromote';
+import contentBanner from './common/imgs/contentBanner.png';
 import style from './App.css';
 import './iconfont.css';
 
@@ -81,7 +82,12 @@ class App extends Component {
                    <div className={style.contentMove}>
                       <ContentMove/>
                    </div>
-                   <div className={style.contentPromote}></div>
+                   <div className={style.contentPromote}>
+                      <ContentPromote/>
+                   </div>
+                   <div className={style.contentBanner}>
+                     <img src={contentBanner}/>
+                   </div>
                </div>
               
             </Content>

@@ -50,13 +50,14 @@
     height: 222px;
     margin-left: 20px;
     border-radius: 5px;
+    position: relative;
 
 
 }
 
 .list{
     width: 100%;
-    height: 100px;
+    height: 101px;
     border-radius: 5px;
 
 
@@ -72,6 +73,28 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+
+}
+
+.center{
+
+}
+
+
+
+.font{
+   position: absolute;
+   bottom: 124px;
+   left: 20px;
+   color: #fff;
+
+}
+
+.fontBom{
+    position: absolute;
+    left: 20px;
+    bottom: 4px;
+    color: #fff;
 
 }
 
