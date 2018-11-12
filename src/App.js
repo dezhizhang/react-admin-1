@@ -11,6 +11,7 @@ import ContentTabbar from './components/contentTabbar/ContentTabbar';
 import ContentMove from './components/contentMove/ContentMove';
 import ContentPromote from './components/contentPromote/ContentPromote';
 import contentBanner from './common/imgs/contentBanner.png';
+import ContentLive from './components/contentLive/ContentLive';
 import style from './App.css';
 import './iconfont.css';
 
@@ -87,6 +88,9 @@ class App extends Component {
                    </div>
                    <div className={style.contentBanner}>
                      <img src={contentBanner}/>
+                   </div>
+                   <div className={style.contentLive}>
+                      <ContentLive/>
                    </div>
                </div>
               
